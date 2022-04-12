@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	<head>
+		<title>Formulario con JavaScript</title>
+
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.1">
+	<title>Tienda Electronica</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+		
+		<!--lee codigo javascript-->
+		<script type="text/javascript" src="js/javascript.js"></script>
+		
+		<!--lee codigo css-->
+		<link type="text/css" href="css/style.css" rel="stylesheet" media="screen"/>
+	</head>
+
+
+	<body>
+		<header>
+	 
+<!--final-->
+
+
+<!-- Jumbotron -->
+<div class="jumbotron">
+   <img id="jumimi" src="img/logomusic.png " class="img-fluid" alt="responsive image">
+   </div>
+	 </header>
+<!--final-->
+
+<!--Slider-->
+<h1>Página de Prueba</h1>
+<h1>Fase de Desarrollo</h1>
+<h1>NOTA: Ejemplo de como se va implementar nuestro Categoria</h1>
+
+
+
+
+
+<div class="container">
+
+<div id="todo" class="todoNo">
+			<div id="menu" class="menuNo">
+	
+
+	   
+
+
+				<!--Producto del 1 al 9-->
+				<div ></div>
+				<div id="div1" name="DIVS"></div>
+				<div id="div2" name="DIVS"></div>
+			
+				<div id="div3" name="DIVS"></div>
+				<div id="div4" name="DIVS"></div>
+				<div id="div5" name="DIVS"></div>
+				<div id="div6" name="DIVS"></div>
+				<div id="div7" name="DIVS"></div>
+				<div id="div8" name="DIVS"></div>
+				<div id="div9" name="DIVS"></div>
+	
+					<br><br> <br><br>	 
+				<!--Botones de compra-->
+				<div id="divbotones">
+					<input type="button" id="botonTotal" value="Calcular total"/>
+					<input type="button" id="botonDatos" value="Datos personales" disabled="disabled"/>
+					<input type="button" id="botonPago" value="Pago" disabled="disabled"/>
+					<input type="button" id="botonConfirmar" value="Confirmar pedido" disabled="disabled"/>
+				 </div>
+</div>
+
+ 	<br><br> <br><br>		<br><br> <br><br>	
+				
+				<!--zona de compra, tablas, formularios, etc.-->
+				<div id="divZonaCompra" class="divZonaCompraNo">
+
+				
+					<!--Carrito de la compra-->
+					<div id="divTotal" class="divsNo">
+						<p><b>Carrito de la compra, si quiere hacer alguna modificacion aun esta a tiempo:</b></p>
+						<table id="tablaTotal"></table>
+					</div>
+				
+				
+					<!--Datos personales-->				
+					<div id="divDatos" class="divsNo">
+
+
+						<p><b>Introduzca sus datos personales:</b></p>
+							
+							<div id="divDatosPersonales0">
+								<div id="divDatosPersonales1">
+									<label>Nombre completo:</label><br/>
+									<input type="text" id="nombre" value="" size="26" /><br/>
+									
+									
+									<label>DNI:</label><br/>
+									<input type="text" id="dni" value="" size="8" maxlength="9" /><br/>
+									
+									
+									<label>Fecha de nacimiento:</label><br/>
+									<select id="fechaNacimientoDia">
+										<option value="">&nbsp;dia&nbsp;</option>
+									</select>
+									<select id="fechaNacimientoMes">
+										<option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mes</option>
+										<option value="1">Enero</option>
+										<option value="2">Febrero</option>
+										<option value="3">Marzo</option>
+										<option value="4">Abril</option>
+										<option value="5">Mayo</option>
+										<option value="6">Junio</option>
+										<option value="7">Julio</option>
+										<option value="8">Agosto</option>
+										<option value="9">Septiembre</option>
+										<option value="10">Octubre</option>
+										<option value="11">Noviembre</option>
+										<option value="12">Diciembre</option>
+									</select>			
+									<select id="fechaNacimientoAnio">
+										<option value="">&nbsp;&nbsp;año&nbsp;</option>
+									</select><br/>
+								</div>
+
+
+								
+								<div id="divDatosPersonales2">
+
+									<label>Telefono movil:</label><br/>
+									<input type="text" id="movil" value="" size="8" maxlength="9"/><br/>
+
+									<label>Email:</label><br/>
+									<input type="text" id="email1" value="" size="25" /><br/>
+									
+									<label>Repita el email:</label><br/>
+									<input type="text" id="email2" value="" size="25" />							
+								</div>
+							</div>
+
+							<br> <br>
+								
+						<div id="divDomicilio">
+							<label>Tipo de via:</label>
+							<select id="tipoDeVia">
+								<option value="Avenida">Avenida</option>
+								<option value="Calle"selected="selected">Calle</option>
+								<option value="Camino">Camino</option>
+								<option value="Carretera">Carretera</option>
+								<option value="Pasaje">Pasaje</option>
+								<option value="Plaza">Plaza</option>
+								<option value="Residencia">Residencia</option>
+								<option value="Ronda">Ronda</option>
+								<option value="Travesia">Travesia</option>
+								<option value="Urbanizacion">Urbanizacion</option>
+							</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							
+							<label>Nombre via:</label>
+							<input type="text" id="viaNombre" value="" size="20" /><br/>
+							
+							<label>Nº/km:</label>
+							<input type="text" id="viaNumero" value="" size="2" />&nbsp;&nbsp;
+								
+							<label>Bloque:</label>
+							<input type="text" id="viaBloque" value="" size="2" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+							<label>Escalera:</label>
+							<input type="text" id="viaEscalera" value="" size="2" />&nbsp;&nbsp;
+								
+							<label>Piso:</label>
+							<input type="text" id="viaPiso" value="" size="2" /><br/>
+							
+							
+							<label>Localidad:</label>
+							<input type="text" id="localidad" value="" size="13"/>&nbsp;&nbsp;
+							
+							<label>Codigo Postal:</label>
+							<input type="text" id="codigoPostal" value="" size="5" maxlength="5"/>&nbsp;&nbsp;
+							
+							<label>Provincia:</label>
+							<select id="provincia">
+								<option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;provincia</option>
+								<option value="15">San Salvador</option>
+								
+							</select>
+						</div>								
+					</div>					
+					
+					
+					<!--Datos de pago-->
+					<div id="divPago" class="divsNo">
+						<p><b>Introduzca los datos de la tarjeta de credito/debito donde se cargara el cobro:</b></p>
+
+						
+						<label>Titular de la tarjeta:</label><br/>
+						<input type="text" id="titular" value="" size="26" /><br/>
+
+						
+						<div id="metodosDePago">
+							<label><span  id="alertTipoDeTarjeta">Tipo de tarjeta:</span></label><br/>
+							<label for="visa">
+								<input type="radio" id="visa" name="tarjetas" class="logoTarjetas" value="Visa">
+								<img src="img/pago/visa.gif"></img>
+							</label>
+							  
+							<label for="masterCard">
+								<input type="radio" id="masterCard" name="tarjetas" class="logoTarjetas" value="MasterCard">
+								<img src="img/pago/mastercard.gif"></img>
+							</label>
+							  
+							<label for="amex">
+								<input type="radio" id="amex" name="tarjetas" class="logoTarjetas" value="American Express">
+								<img src="img/pago/amex.gif"></img>
+							</label>
+							  
+							<label for="aurora">
+								<input type="radio" id="aurora" name="tarjetas" class="logoTarjetas" value="Aurora">
+								<img src="img/pago/aurora.gif"></img>
+							</label>
+					
+						</div>
+						
+						
+						<div id="divNumeroTarjeta">
+							<label>Número tarjeta y CVC:</label><br/>
+							<input type="text" id="numeroTarjeta" value="" size="15" maxlength="16" />
+							<input type="text" id="cvcTarjeta" value="" size="2" maxlength="3" /><br/>
+							
+							
+							<select id="mesTarjeta">
+								<option value="">&nbsp;&nbsp;mes&nbsp;</option>
+							</select>
+
+							<select id="anioTarjeta">
+								<option value="">&nbsp;&nbsp;año&nbsp;</option>
+							</select>
+						</div>
+					</div>						
+				</div>
+			</div>	
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 <br><br>	 <br><br>    <br><br> 
+
+
+<footer>
+
+     <div class="container-footer-all">
+        
+            <div class="container-body">
+
+                <div class="colum1">
+                    <h1>Mas informacion de la compañia</h1>
+
+                    <p style="text-align: justify;">Esta compañia se dedica a la venta de software integrado con un 
+                    conjunto de articulo de calidad de igual de forma te poseemos un servicio unico 
+                	nuestro deber el cliente este con nosotros.</p>
+
+                </div>
+
+                <div class="colum2">
+
+                    <h1>Redes Sociales</h1>
+
+                    <div class="row">
+                        <a  href="https://www.facebook.com/Electronic-Store-688617674838379/" target="_blank"><img src="img/icon/facebook.png"/></a>
+                        <label>Siguenos en Facebook</label>
+                    </div>
+                    <div class="row">
+                         <a  href="" target="_blank"><img src="img/icon/twitter.png"></a>
+                        <label>Siguenos en Twitter</label>
+                    </div>
+                    <div class="row">
+                         <a  href="" target="_blank"><img src="img/icon/instagram.png"></a>
+                        <label>Siguenos en Instagram</label>
+                    </div>
+                    <div class="row">
+                        <a  href="" target="_blank"><img src="img/icon/google-plus.png"/></a>
+                        <label>Siguenos en Youtube</label>
+                    </div>
+                </div>
+
+                <div class="colum3">
+
+                    <h1>Informacion Contactos</h1>
+
+                    <div class="row2">
+                        <img src="img/icon/house.png">
+                        <label>San Salvador, 
+                        Calle San Jose
+                        Local #45
+                        Casa #27
+                    </label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="img/icon/smartphone.png">
+                        <label>2250-8974</label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="img/icon/contact.png">
+                         <label>Tecnology_Store@gmail.com</label>
+                    </div>
+
+                </div>
+
+            </div>
+        
+        </div>
+        
+        <div class="container-footer">
+               <div class="footer">
+                    <div class="copyright">
+                        © 2018 Todos los Derechos Reservados | <a href="">UDB</a>
+                    </div>
+
+                    <div class="information">
+                        <a href="Enlaces/info.html">Informacion Compañia</a> | <a href="">Privacion y Politica</a> | <a href="#">Terminos y Condiciones</a>
+                    </div>
+                </div>
+            </div>
+</footer>
+<!--final-->
+	</body>
+</html>
+
+
