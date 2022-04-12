@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -8,10 +8,12 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="css/ComentarioEstilo.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/1-col-portfolio.css">
+     <script src="js/comentario.js"></script>
 
 </head>
 <body>
@@ -29,14 +31,14 @@
       <li class="nav-item ">
         <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
       </li>
-       <li class="nav-item ">
+       <li class="nav-item active">
         <a class="nav-link" href="Servicios.html">Servicios</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Blog</a>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
       </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="Contactar.html">Contactar</a>
+      <li class="nav-item">
+        <a class="nav-link" href="contactar.html">Contactar</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -61,10 +63,10 @@
     <a class="nav-link active" href="Ofertas.html">Ofertas</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="audio_video.html">Audio Video</a>
+   <a class="nav-link" href="audio_video.html">Audio Video</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="computacion.html">Computacion</a>
+    <a class="nav-link" href="Computación.html">Computacion</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="herramientas.html">Herramientas</a>
@@ -168,7 +170,19 @@
             </div>
           </div>
 
+          <div class="container" id="zone">
+      
+          </div>
+
         </div>
+
+
+  
+
+
+
+
+
 
         <!-- Sidebar Widgets Column -->
         <div class="col-md-4">
@@ -242,6 +256,41 @@
 
       <hr>
 
+<div class="container">
+        <center><h1>Deja Tu Comentario</h1></center>
+        <form>
+          <div class="form-group">
+            <div class="row"> 
+            <div class="col-4 borde"> <div class="container">
+                    <label for="nombre">Ingrese su nombre:</label>
+                <input type="text"  class="form-control" placeholder="Nombre" name=""  id="nombre">
+            </div>
+          </div>
+          <div class="col-8 borde">
+              <label for="comment">Comentario:</label>
+            <textarea  placeholder="Escriba un comentario..." class="form-control" rows="5" id="comentario"></textarea>
+          </div>
+   </div>
+           
+            
+          
+      
+          </div>
+          <div>
+            <center><input class="btn btn-primary" id="comentar" type="button" value="Comentar" onclick="beg();"></center> 
+            </div>
+          
+        </form>
+      </div>
+
+    
+<!-- Contenedor Principal -->
+<div class="comments-container">
+
+
+</div>
+
+
 
 <!--footer-->
 
@@ -263,20 +312,20 @@
                     <h1>Redes Sociales</h1>
 
                     <div class="row">
-                        <a  href="https://www.facebook.com/Electronic-Store-688617674838379/" target="_blank"><img src="img/icon/facebook.png"/></a>
-                        <label>Siguenos en Facebook</label>
+                        <a  href="https://www.facebook.com/Electronic-Store-688617674838379/" target="_blank"><img src="img/icon/facebook.png" class="redes" >
+                        <span>Siguenos en Facebook</span></a>
                     </div>
                     <div class="row">
-                         <a  href="" target="_blank"><img src="img/icon/twitter.png"></a>
-                        <label>Siguenos en Twitter</label>
+                         <a  href="" target="_blank"><img class="redes" src="img/icon/twitter.png">
+                        <span>Siguenos en Twitter</span></a>
                     </div>
                     <div class="row">
-                         <a  href="" target="_blank"><img src="img/icon/instagram.png"></a>
-                        <label>Siguenos en Instagram</label>
+                         <a  href="" target="_blank"><img class="redes" src="img/icon/instagram.png">
+                        <span>Siguenos en Instagram</span></a>
                     </div>
                     <div class="row">
-                        <a  href="" target="_blank"><img src="img/icon/google-plus.png"/></a>
-                        <label>Siguenos en Youtube</label>
+                        <a  href="" target="_blank"><img class="redes" src="img/icon/google-plus.png"/>
+                        <span>Siguenos en Youtube</span></a>
                     </div>
                 </div>
 

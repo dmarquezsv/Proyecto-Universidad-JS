@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -7,10 +7,16 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/estilos.css"> <!--Estilo disñado-->
 	<script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/EstiloFiltro.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/filtro.js"></script>
+
+
 </head>
 <body>
 
@@ -33,10 +39,10 @@
        <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-           <a class="dropdown-item" href="Enlaces/Ejemplo.html">Demostración de Compra JS en Desarrollo</a>
+  
           <a class="dropdown-item" href="Enlaces/ofertas.html">Ofertas</a>
           <a class="dropdown-item" href="Enlaces/audio_video.html">Audio y Video</a>
-              <a class="dropdown-item" href="Enlaces/Computacion.html">Computacion</a>
+              <a class="dropdown-item" href="Enlaces/Computación.html">Computacion</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="Enlaces/herramientas.html">Herramientas</a>
               <a class="dropdown-item" href="Enlaces/Electronica.html">Electronica</a>
@@ -49,6 +55,9 @@
       <li class="nav-item">
         <a class="nav-link" href="Enlaces/Contactar.html">Contactar</a>
       </li>
+      
+  
+
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control my-2 mr-sm-2" type="search" placeholder="Buscar">
@@ -113,9 +122,9 @@
         <!-- /.col-lg-8 -->
         <div class="col-lg-4">
           <h1>Nuestro Servicio </h1>
-          <p style="text-align: justify;">Bienvenido a nuestra página web aquí encontraras diferentes categorias tales como la parte de informaticas,Electronica,Herramientas ,instrumentos Musicales y otros articulos ademas encontrar ofertas del día. Asi que aprovecha esta oportunidad que brindamos nuestro deber es satisfacer a nuestro cliente.</p>
+          <p style="text-align: justify;">Bienvenido a nuestra página web aquí encontraras diferentes categorias tales como la parte de informaticas,Electronica,Herramientas ,instrumentos Musicales y otros articulos ademas encontrar ofertas del día. Asi que aprovecha esta oportunidad que brindamos nuestro deber es satisfacer a nuestro cliente.<b>Visita nuestro Blog y comenta</b></p>
           <a class="btn btn-primary btn-lg" href="Enlaces/blog.html">Visiar Blog</a>
-          <a class="btn btn-primary btn-lg" href="Enlaces/Ejemplo.html">En Desarrollo JS</a>
+        
         </div>
         <!-- /.col-md-4 -->
       </div>
@@ -130,121 +139,221 @@
       <br>
   <center><h1>Productos Destacados</h1></center>
   <hr>
- 		 <!-- Page Content -->
-    <div class="container">
+ 		
+    <!--filtro aplicar-->
 
-      <div class="row">
+    <div class="wrap">
+    <ul class="tabs">
+      <li><a href="#tab1"><span ></span><span class="tab-text">Computación</span></a></li>
+      <li><a href="#tab2"><span ></span><span class="tab-text">Electronica</span></a></li>
+      <li><a href="#tab3"><span ></span><span class="tab-text">Instrumentos</span></a></li>
+      <li><a href="#tab4"><span ></span><span class="tab-text">Audio y Video</span></a></li>
+    </ul>
 
-          <div class="row">
+    <div class="secciones">
+     
+      <article id="tab1">
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="Enlaces/Computación.html"><img class="card-img-top" id="imgDestacado"  src="Enlaces/img/Computacion/Placas madres2.png" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="Enlaces/Computacion.html">Placa madre Gamer</a>
-                  </h4>
-                  <h5>$150.00</h5>
-                  <p class="card-text">Placa madre donde sera capaz de correr todo tipo de juegos de igual forma edición de video  foto asi que aprevecha esta oportunidad puede encontrar más información en el enlace</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
+       <div class="row">
+        <div class="col-lg-4 col-sm-6 portfolio-item"  >
+          <div class="card h-100"  >
+            <div id="ColorCaja"><center><h3>Placa Madre Gaming 3</h3></center></div>
+            <a href="Enlaces/Computación.html"><img class="card-img-top" id="imgDestacado"  src="Enlaces/img/Computacion/Placas madres2.png" alt=""></a>
+            <div class="card-body" >
+              <h4 class="card-title">
+                <a href="Enlaces/Computación.html">$ 150.00</a>
+                <hr>
+              </h4>
+              <p class="card-text">Placa madre donde sera capaz de correr todo tipo de juegos de igual forma edición de video  foto asi que aprevecha esta oportunidad puede encontrar más información en el enlace.</p>
             </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="Enlaces/Instrumentos.html"><img class="card-img-top" id="imgDestacado" src="Enlaces/img/InstrumentoMusicales/98.png" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="Enlaces/Instrumentos.html">Tuba black</a>
-                  </h4>
-                  <h5>$24.99</h5>
-                  <p class="card-text">Especial para tocar en un banda especializada te ofrecemos el estuche incluido y ademas te regalamos articulo de limpieza para darle mantenimiento a la Tuba para más información en el enlace.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="Enlaces/herramientas.html"><img class="card-img-top" id="imgDestacado" src="Enlaces/img/herraminetas/oie_transparent (3).png" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="Enlaces/herramientas.html">Caja de Herramientas</a>
-                  </h4>
-                  <h5>$15.99</h5>
-                  <p class="card-text">Caja de herramienta donde podras guardar cualquier tipo herramientas pequeñas más información en el  enlace</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="Enlaces/audio_video.html"><img class="card-img-top"id="imgDestacado" src="Enlaces/img/audio_Video/oie_transparent (7).png" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="Enlaces/audio_video.html">Camaras Full HD Cannon</a>
-                  </h4>
-                  <h5>$359.99</h5>
-                  <p class="card-text">Camara especial para grabaciones para familia o para el diseño de video. aprovecha esta oportunidad más información en el lance</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="Enlaces/Electronica.html"><img class="card-img-top" id="imgDestacado"src="Enlaces/img/Electronica/oie_transparent (3).png" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="Enlaces/Electronica.html">Raspberry Pi 3</a>
-                  </h4>
-                  <h5>$50.00</h5>
-                  <p class="card-text">Raspberry Pi3 Su funcionalidad completa para cualquier proyecto que desea crear de incluimos el memoria 32gb ya instaldo sisteme operetivo para que comienze a programar. Para más información en el enlace</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="Enlaces/Electronica.html"><img class="card-img-top"id="imgDestacado" src="Enlaces/img/Electronica/oie_transparent (2).png" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="Enlaces/Electronica.html">Arduino Uno</a>
-                  </h4>
-                  <h5>$25.00</h5>
-                  <p class="card-text" >Capaz de soportar una gran varidad de proyecto la cual te servira en la parte de electronica su funcionalidad es increible para más información en el enlace</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
           </div>
-          <!-- /.row -->
-
         </div>
-        <!-- /.col-lg-9 -->
 
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+              <div id="ColorCaja"><center><h3>Tarjeta Grafica </h3></center></div>
+            <a href="#"><img class="card-img-top" id="imgDestacado" src="Enlaces/img/Computacion/graficas2.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="Enlaces/Computación.html">$ 175.00</a>
+              </h4>
+              <p class="card-text">Targeta Grafica GV-R929XOC-4GD, es una de las mas buscadas por los gamers por su alto rendimiento y su funcionalidad al momento de correr juegos instalados en la PC de gama media-alta.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+              <div id="ColorCaja"><center><h3>Monitor LG</h3></center></div>
+            <a href="#"><img class="card-img-top" id="imgDestacado" src="Enlaces/img/Computacion/Monitor2.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="Enlaces/Computación.html">$ 199.99</a>
+              </h4>
+              <p class="card-text"> antalla LG, es una de las pantallas con mejor resolucion en la actualidad ya que es de la marca ya reconocida LG a nivel mundial es una muy cotizada por los gamers </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- /.row -->
+
+
+
+      </article>
+
+
+
+      <article id="tab2">
+        
+       <div class="row">
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+              <div id="ColorCaja"><center><h3>Arduino UNO</h3></center></div>
+            <a href="Enlaces/Computación.html"><img class="card-img-top" id="imgDestacado"  src="Enlaces/img/Electronica/oie_transparent (2).png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="Enlaces/Electronica.html">$ 25.00</a>
+              </h4>
+              <p class="card-text"> Arduino Uno es una placa electrónica basada en ATmega328. Cuenta con 14 entradas/salidas digitales, de las cuales 6 se pueden utilizar como salida.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+              <div id="ColorCaja"><center><h3>Raspberry Pi 3</h3></center></div>
+            <a href="#"><img class="card-img-top" id="imgDestacado" src="Enlaces/img/Electronica/oie_transparent (3).png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="Enlaces/Electronica.html">$50.00</a>
+              </h4>
+              <p class="card-text">Es una placa base de 85 x 54 milímetros en el que se aloja un chip Broadcom BCM2835 con procesador ARM hasta a 1 GHz de velocidad.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+              <div id="ColorCaja"><center><h3>Resistencia</h3></center></div>
+            <a href="#"><img class="card-img-top" id="imgDestacado" src="Enlaces/img/Electronica/oie_transparent (4).png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="Enlaces/Electronica.html">$ 0.95</a>
+              </h4>
+              <p class="card-text">La resistencia es muy usada para regular la energia estas pueden ser de 4 bandas o 5 bandas eso depende de la utilidad que se le dara y en donde se usara.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      </article>
+      <article id="tab3">
+
+       <div class="row">
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+              <div id="ColorCaja"><center><h3>Tuba Clasica</h3></center></div>
+            <a href="Enlaces/Computación.html"><img class="card-img-top" id="imgDestacado"  src="Enlaces/img/InstrumentoMusicales/98.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="Enlaces/Instrumentos.html">$95.00</a>
+              </h4>
+              <p class="card-text">Por sus medidas y calidad sonora son ideales tanto para los estudiantes como para los músicos que están buscando una tuba manejable , fácil , buena afinación y con un sonido grande.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+              <div id="ColorCaja"><center><h3>Armonica Ranchera</h3></center></div>
+            <a href="#"><img class="card-img-top" id="imgDestacado" src="Enlaces/img/InstrumentoMusicales/1.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="Enlaces/Instrumentos.html">$ 15.00</a>
+              </h4>
+              <p class="card-text">Es un instrumento de viento, del grupo de instrumentos de viento-madera y del se toca soplando o aspirando el aire sobre uno de sus agujeros individuales o sobre múltiples agujeros.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+              <div id="ColorCaja"><center><h3>Acordeón</h3></center></div>
+            <a href="#"><img class="card-img-top" id="imgDestacado" src="Enlaces/img/InstrumentoMusicales/3.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="Enlaces/Instrumentos.html">$ 175.00</a>
+              </h4>
+              <p class="card-text">El acordeón forma parte del grupo de los instrumentos de viento. Dispone de un fuelle cerrado por cajas en sus extremos, que albergan distintas teclas o llaves dentro del mismo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        
+      </article>
+
+
+      <article id="tab4">
+        
+
+       <div class="row">
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+              <div id="ColorCaja"><center><h3>Camara mini</h3></center></div>
+            <a href="Enlaces/Computación.html"><img class="card-img-top" id="imgDestacado"  src="Enlaces/img/audio_video/oie_transparent.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="Enlaces/audio_video.html">$ 130.00</a>
+              </h4>
+              <p class="card-text">Ideal para la familia con una resolución Full HD y de gran alcance para las fotografias a solo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+              <div id="ColorCaja"><center><h3>Parlantes AOC</h3></center></div>
+            <a href="#"><img class="card-img-top" id="imgDestacado" src="Enlaces/img/audio_video/oie_transparent (1).png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="Enlaces/audio_video.html">$ 20.00</a>
+              </h4>
+              <p class="card-text">Diseño unicos en nuestra tienda capaz de soportar bluetooth,de igual manera tiene entrada para audio</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+              <div id="ColorCaja"><center><h3>Camara Cannon</h3></center></div>
+            <a href="#"><img class="card-img-top" id="imgDestacado" src="Enlaces/img/audio_video/oie_transparent (3).png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="Enlaces/audio_video.html">$188.00</a>
+              </h4>
+              <p class="card-text">Ideal para la familia con una resolución Full HD y de gran alcance para las fotografias </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </article>
+    </div>
+  </div>
+    
+  
+
+
+
+  <!--Fin del filtro-->
+
+    <div class="container">
+        <center><h3> Encuentranos En: </h3></center>
+        <iframe  class="container"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.041957026586!2d-89.15588738597246!3d13.715908701821466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63375d2edcba6f%3A0x5101ecc11020bce6!2sUniversidad+Don+Bosco!5e0!3m2!1ses!2ssv!4v1540918608130" width="1100" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+     
 
     </div>
-    <!-- /.container -->
-
  
 
 

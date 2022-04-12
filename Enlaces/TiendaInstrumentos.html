@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.1" charset="UTF-8">
+    <title>Tienda Electronica</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/4-col-portfolio.css">
+
+    <!--lee codigo javascript-->
+    <script type="text/javascript" src="js/carritoCompraInstrumentos.js"></script>
+
+    <!--lee codigo css-->
+    <link type="text/css" href="css/style.css" rel="stylesheet" media="screen" />
+    <link type="text/css" rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+    <!--Barra de Nav (header)-->
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar navbar-expand-lg">
+            <a class="navbar-brand" href="../index.html">Tienda Electronica</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactar.html">Contactar</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control my-2 mr-sm-2" type="search" placeholder="Buscar">
+                    <button class="btn btn-outline-danger my-2 my-sm-0"> <i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
+        <!--final-->
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <img id="jumimi" src="img/logomusic.png " class="img-fluid" alt="responsive image">
+        </div>
+    </header>
+    <!--final-->
+    <!--navs-->
+   <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="Ofertas.html">Ofertas</a>
+  </li>
+  <li class="nav-item">
+   <a class="nav-link" href="audio_video.html">Audio Video</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Computación.html">Computacion</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="herramientas.html">Herramientas</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Electronica.html">Electronica</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Instrumentos.html">Instrumentos Musicales</a>
+  </li>
+</ul>
+    <!--final-->
+    <div class="container">
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+            <!-- Title -->
+            <h1 class="mt-4">Tienda de Instrumentos</h1>
+            <!-- Author -->
+            <p class="lead">
+                Articulos <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Ver Productos</button><!-- Boton para abrir el formulario de los productos añadidos -->
+            </p>
+
+            <!-- Date/Time -->
+            <p>Publicación: Miercoles 5 de octubre , 2018 at 12:00 PM</p>
+
+        </div>
+        <hr />
+    </div>
+
+
+    <!--Ver los productos-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Productos Añadidos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+
+                    <div class="container">
+                        <div class="row">
+
+                            <!-- Carrito -->
+                            <aside class="container">
+                                <h2>Carrito</h2>
+                                <!-- Elementos del carrito -->
+                                <ul id="carrito" class="list-group list-group-flush"></ul>
+                                <hr>
+                                <!-- Precio total -->
+                                <p class="text-right">Total: $<span id="total"></span></p>
+                            </aside>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <a href="RealizarCompra.html"> <button type="button" class="btn btn-primary">Comprar</button> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin de los productos-->
+    
+
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Elementos generados a partir del JSON -->
+            <div class="col-12 borde" id="Produc"> <main id="items"></main> </div>
+        </div>
+    </div>
+
+
+
+
+    <!--footer-->
+    <footer>
+        <div class="container-footer-all">
+
+            <div class="container-body">
+                <div class="colum1">
+                    <h1>Mas informacion de la compañia</h1>
+                    <p>Esta compañia se dedica a la venta de software integrado con un conjunto de articulo de calidad de igual de forma te poseemos un servicio unico nuestro deber el cliente este con nosotros.</p>
+                </div>
+                <div class="colum2">
+                    <h1>Redes Sociales</h1>
+                    <div class="row">
+                        <a  href="https://www.facebook.com/Electronic-Store-688617674838379/" target="_blank"><img src="img/icon/facebook.png" class="redes" >
+                        <span>Siguenos en Facebook</span></a>
+                    </div>
+                    <div class="row">
+                         <a  href="" target="_blank"><img class="redes" src="img/icon/twitter.png">
+                        <span>Siguenos en Twitter</span></a>
+                    </div>
+                    <div class="row">
+                         <a  href="" target="_blank"><img class="redes" src="img/icon/instagram.png">
+                        <span>Siguenos en Instagram</span></a>
+                    </div>
+                    <div class="row">
+                        <a  href="" target="_blank"><img class="redes" src="img/icon/google-plus.png"/>
+                        <span>Siguenos en Youtube</span></a>
+                    </div>
+                </div>
+                <div class="colum3">
+                    <h1>Informacion Contactos</h1>
+                    <div class="row2">
+                        <img src="img/icon/house.png">
+                        <label>
+                            San Salvador,
+                            Calle San Jose
+                            Local #45
+                            Casa #27
+                        </label>
+                    </div>
+                    <div class="row2">
+                        <img src="img/icon/smartphone.png">
+                        <label>2250-8974</label>
+                    </div>
+                    <div class="row2">
+                        <img src="img/icon/contact.png">
+                        <label>Tecnology_Store@gmail.com</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-footer">
+            <div class="footer">
+                <div class="copyright">
+                    © 2018 Todos los Derechos Reservados | <a href="">UDB</a>
+                </div>
+                <div class="information">
+                    <a href="info.html">Informacion Compañia</a> | <a href="">Privacion y Politica</a> | <a href="">Terminos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--final-->
+</body>
+</html>

@@ -1,3 +1,109 @@
+#Prueba1{
+
+    margin-top: 0%;
+    position:absolute;
+}
+
+#Prueba2{
+    
+    position:absolute;
+    
+}
+
+
+#Prueba3{
+    
+    position:absolute;
+    margin-top:26%;
+}
+
+#Prueba4{
+    
+    position:absolute;
+    margin-top:35%;
+}
+
+#Prueba5{
+    
+    position:absolute;
+    margin-top:46%;
+}
+
+#Prueba6{
+    
+    position:absolute;
+    margin-top:59%;
+}
+
+#Prueba7{
+    
+    position:absolute;
+    margin-top:71%;
+}
+
+#Prueba8{
+    
+    position:absolute;
+    margin-top:81%;
+}
+
+#Prueba9{
+    
+    position:absolute;
+    margin-top:94%;
+}
+
+
+#Prueba10{
+    
+    position:absolute;
+    margin-top:103%;
+}
+
+
+#Prueba11{
+    
+    position:absolute;
+    margin-top:116%;
+}
+
+#Prueba12{
+    
+    position:absolute;
+    margin-top:120%;
+}
+
+#Prueba13 , #Prueba14{
+    
+    position:absolute;
+    margin-top:5%;
+}
+
+#Prueba15{
+     position:absolute;
+    margin-top:10%;
+
+}
+
+
+#items{
+    width: 80%;
+    height: 15%;
+}
+
+#IMGProduc{
+    width:23%;
+   margin-top: 4px;  
+   margin-left:30%;
+    height: 15%;
+}
+
+
+
+
+
+#IMGProduc:hover{-webkit-transform:scale(1.3);transform:scale(1.3);}
+
 .jumbotron{
 	background-color: #CED6DD;
 	color: #fff;
@@ -25,6 +131,7 @@ footer{
     max-width: 1200px;
     margin: auto;
     padding: 40px;
+
     
 }
 
@@ -207,3 +314,34 @@ h3{
  #enviado1{
  display:none;
  }
+
+.redes{
+    display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg); // IE 9
+        -moz-transform: rotate(0deg); // Firefox
+        -o-transform: rotate(0deg); // Safari and Chrome
+        -ms-transform: rotate(0deg); // Opera
+        -webkit-transition: all 500ms ease-in-out; // IE 9
+        -moz-transition: all 500ms ease-in-out; // Firefox
+        -ms-transition: all 500ms ease-in-out; // Safari and Chrome 
+        -o-transition: all 500ms ease-in-out; // Opera 
+}
+
+.redes:hover{
+            transform: rotate(-35deg);
+            -webkit-transform: rotate(-35deg); // IE 9
+            -moz-transform: rotate(-35deg); // Firefox
+            -o-transform: rotate(-35deg); // Safari and Chrome
+            -ms-transform: rotate(-35deg); // Opera
+}
+
+#Produc{
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom:10%;
+
+}

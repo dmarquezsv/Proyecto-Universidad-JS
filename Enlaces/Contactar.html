@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.1">
-	<title>Tienda Electronica</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.1">
+  <title>Tienda Electronica</title>
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/estilos.css">
-	<script src="js/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/validar.js"></script>
     <link rel="stylesheet" type="text/css" href="css/1-col-portfolio.css">
-    <script src="js/validar.js"></script>
+
 
 </head>
 <body>
 
 <!--Barra de Nav (header)-->
-	 <header>
-	 <nav class="navbar navbar-dark bg-dark navbar navbar-expand-lg">
+   <header>
+   <nav class="navbar navbar-dark bg-dark navbar navbar-expand-lg">
   <a  class="navbar-brand" href="../index.html">Tienda Electronica</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -53,7 +54,7 @@
 <div class="jumbotron">
    <img id="jumimi" src="img/logomusic.png " class="img-fluid" alt="responsive image">
    </div>
-	 </header>
+   </header>
 <!--final-->
 
 <!--navs-->
@@ -62,10 +63,10 @@
     <a class="nav-link active" href="Ofertas.html">Ofertas</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="audio_video.html">Audio Video</a>
+   <a class="nav-link" href="audio_video.html">Audio Video</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="computacion.html">Computacion</a>
+    <a class="nav-link" href="Computación.html">Computacion</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="herramientas.html">Herramientas</a>
@@ -96,38 +97,36 @@
       </h1>
 
 
-      <!-- Formulario -->
+    <!-- Formulario -->
       <div class="row">
         <div class="col-md-7">
-          <form action="#" method="post" class="form-register" onsubmit="return validar();">
+          <form action="#" method="post" class="form-register">
   <div class="form-group">
     <label for="exampleFormControlInput1">Nombre:</label>
-    <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido" required="">
+    <input type="text" class="form-control" id="nombre" placeholder="Nombre , Apellido">
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput1">Correo Electronico:</label>
-    <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com" required="">
+    <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
   </div>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Asunto</label>
-    <select class="form-control" id="asunto" required="">
-      <option>Servicio al Cliente</option>
-      <option>Ventas</option>
-      <option>Sugerencias</option>
-      <option>Garantías</option>
-      <option>Otro Motivo</option>
-    </select>
+
+    <input type="text" class="form-control"  id="asunto" placeholder="Asunto">
   </div>
+
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Escriba su Mensaje Aquí</label>
     <textarea class="form-control" id="mensaje" rows="3" required=""></textarea>
   </div>
-   
-  <button type="submit" class="btn btn-danger mb-2" onclick="mostrar()">Enviar Mensaje</button>
-  <div id="enviado1" class="alert alert-success" role="alert">
-  Su mensaje ha sido enviado.¡Gracias!
-</div>
+
+  <div id="alerta"></div>
+<input type="button" id="EnviarDatos" value="Enviar Datos" name="">
 </form>
+
+<div id="alerta"></div>
+
+
         </div>
         <div class="col-md-5">
           <h3>Medios</h3>
@@ -145,8 +144,6 @@
 </div>
 
 
-
-
 <!--footer-->
 
 <footer>
@@ -158,7 +155,10 @@
                 <div class="colum1">
                     <h1>Mas informacion de la compañia</h1>
 
-                    <p>Esta compañia se dedica a la venta de software integrado con un conjunto de articulo de calidad de igual de forma te poseemos un servicio unico nuestro deber el cliente este con nosotros.</p>
+                    <p>Esta compañia se dedica a la venta de software integrado con un 
+                    conjunto de cosas que no se lo que estoy escribiendo, este 
+                    texto es solo para llenara informacion en el cuadro de informacion 
+                    de la compañia.</p>
 
                 </div>
 
@@ -167,20 +167,20 @@
                     <h1>Redes Sociales</h1>
 
                     <div class="row">
-                        <a  href="https://www.facebook.com/Electronic-Store-688617674838379/" target="_blank"><img src="img/icon/facebook.png"/></a>
-                        <label>Siguenos en Facebook</label>
+                        <a  href="https://www.facebook.com/Electronic-Store-688617674838379/" target="_blank"><img src="img/icon/facebook.png" class="redes" >
+                        <span>Siguenos en Facebook</span></a>
                     </div>
                     <div class="row">
-                         <a  href="" target="_blank"><img src="img/icon/twitter.png"></a>
-                        <label>Siguenos en Twitter</label>
+                         <a  href="" target="_blank"><img class="redes" src="img/icon/twitter.png">
+                        <span>Siguenos en Twitter</span></a>
                     </div>
                     <div class="row">
-                         <a  href="" target="_blank"><img src="img/icon/instagram.png"></a>
-                        <label>Siguenos en Instagram</label>
+                         <a  href="" target="_blank"><img class="redes" src="img/icon/instagram.png">
+                        <span>Siguenos en Instagram</span></a>
                     </div>
                     <div class="row">
-                        <a  href="" target="_blank"><img src="img/icon/google-plus.png"/></a>
-                        <label>Siguenos en Youtube</label>
+                        <a  href="" target="_blank"><img class="redes" src="img/icon/google-plus.png"/>
+                        <span>Siguenos en Youtube</span></a>
                     </div>
                 </div>
 

@@ -1,24 +1,26 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.1">
-	<title>Tienda Electronica</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.1">
+  <title>Tienda Electronica</title>
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/estilos.css">
-	<script src="js/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/ValidarComprar.js"></script>
     <link rel="stylesheet" type="text/css" href="css/1-col-portfolio.css">
+
 
 </head>
 <body>
 
 <!--Barra de Nav (header)-->
-	 <header>
-	 <nav class="navbar navbar-dark bg-dark navbar navbar-expand-lg">
+   <header>
+   <nav class="navbar navbar-dark bg-dark navbar navbar-expand-lg">
   <a  class="navbar-brand" href="../index.html">Tienda Electronica</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -35,8 +37,8 @@
       <li class="nav-item">
         <a class="nav-link" href="blog.html">Blog</a>
       </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="Contactar.html">Contactar</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Contactar</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -52,7 +54,7 @@
 <div class="jumbotron">
    <img id="jumimi" src="img/logomusic.png " class="img-fluid" alt="responsive image">
    </div>
-	 </header>
+   </header>
 <!--final-->
 
 <!--navs-->
@@ -87,50 +89,61 @@
     <div class="container">
 
       <!-- Page Heading -->
-      <h1 class="my-4">Información 
+      <h1 class="my-4">Compra 
         <small>Electronic Store</small>
       </h1>
-<div id="Cajal_que_hacemos">
-<!--Sobre Nosotros-->
-<div class="container" >
-  <center><h1 id="Titulo1">Lo que hacemos</h1></center>
-
-  <div class="row">
-    <div class="col-lg-4 col-md-5 col-sm-7 portfolio-item">
-      <center><h4 ">Sobre Nosotros</h4></center>
-      <hr>
-      <center><img src="img/info/2.jpeg" id="icono"></center>
-      <br>
-      <p id="SobreNosotros"> Es una empresa pequeña que nace con el objetivo de brindar servicios de calidad en el área de electronica, especialmente, dando apoyo en gestión de informatica y herraminetas.</p>
+<h1 class="my-4">
+        <small>Realizar Compras</small>
+      </h1>
 
 
-    </div>
+    <!-- Formulario -->
+      <div class="row">
+        <div class="col-md-7">
+          <form action="#" method="post" class="form-register">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Nombre:</label>
+    <input type="text" class="form-control" id="nombre" placeholder="Nombre , Apellido">
+  </div>
 
-    <div class="col-lg-4 col-md-5 col-sm-7 portfolio-item">
-      <center><h4>Misión</h4></center>
-      <hr>
-      <center><img src="img/info/3.jpeg" id="icono"></center>
-      <br>
-      <p id="SobreNosotros">Experiencia para el cliente, mediante una atención personalizada a su vez con pasión, compromiso y esfuerzo son las características que rigen la empresa, logrando una relación ganar-ganar con aquellos que soliciten los servicios que Electronic Store ofrece.</p>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Correo Electronico:</label>
+    <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
+  </div>
+            <div class="form-group">
+                  <label for="exampleFormControlInput1">Dirección:</label>
+                  <input type="email" class="form-control" id="direccion" placeholder="nombre@ejemplo.com">
+              </div>
 
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Tarjeta de Credito</label>
 
-    </div>
-    <div class="col-lg-4 col-md-5 col-sm-7 portfolio-item">
-      <center><h4>Misión</h4></center>
-      <hr>
-      <center><img src="img/info/1.jpeg" id="icono"></center>
-      <br>
-      <p id="SobreNosotros"> Ser una empresa líder en el mercado por la efectividad y versatilidad de las campañas propuestas, sumado a la calidad del trabajo, tratando de obtener la satisfacción total de los clientes ante los servicios brindados.</p>
-
-
-    </div>
+    <input type="text" class="form-control"  id="Tarjeta" placeholder="Tarjeta de Credito">
   </div>
 
 
 
-</div>
+  <div id="alerta"></div>
+              <input type="button" value="Realizar Compra"   id="EnviarDatos"/>
+ 
 
-</div>
+</form>
+
+<div id="alerta"></div>
+
+
+        </div>
+        <div class="col-md-5">
+          <h3>Medios</h3>
+            <ul>
+              <li id="parrafos">PBX: 2185-8301</li>
+              <li id="parrafos">WhatsApp: 7009-8180</li>
+                <li id="parrafos">También puedes escribirnos directamente al siguiente correo electrónico, te responderemos al instante electronicstore2018udb@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <!-- /.row -->
 
       <hr>
 </div>
@@ -147,7 +160,10 @@
                 <div class="colum1">
                     <h1>Mas informacion de la compañia</h1>
 
-                    <p>Esta compañia se dedica a la venta de software integrado con un conjunto de articulo de calidad de igual de forma te poseemos un servicio unico nuestro deber el cliente este con nosotros.</p>
+                    <p>Esta compañia se dedica a la venta de software integrado con un 
+                    conjunto de cosas que no se lo que estoy escribiendo, este 
+                    texto es solo para llenara informacion en el cuadro de informacion 
+                    de la compañia.</p>
 
                 </div>
 

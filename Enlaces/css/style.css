@@ -1,5 +1,5 @@
 /*Fichero de estilos para pantallas de ordenador*/
-	body {background: ;font-size:14px;font-family:comic sans ms;}
+	body {color:black;font-size:14px;font-family:Arial;}
 
 * {
 	margin: 0px;
@@ -12,6 +12,8 @@
 		margin-right:auto;
 		display:block;
 		padding-top:5px;
+		width: 40%;
+		height: 40%;
 	}
 
 	div.etiquetas {
@@ -45,7 +47,7 @@
 		margin-right:auto;
 		display:block;
 		width:1000px;
-		background:  url("../img/otros/plantilla.jpg") no-repeat;
+	
 }
 	div.todoNo{height:805px;}
 	div.todoSi{height:1070px;}
@@ -67,6 +69,7 @@
 		left:12px;
 		width:221px;
 		height:217px;
+		margin-top: -5%;
 	}
 
 	#div2{
@@ -75,6 +78,7 @@
 		left:246px;
 		width:221px;
 		height:217px;
+		margin-top: -5%;
 	}
 
 	#div3{
@@ -83,11 +87,12 @@
 		left:480px;
 		width:221px;
 		height:217px;
+		margin-top: -5%;
 	}
 
 	#div4{
 		position:absolute;
-		top:285px;
+		top:271px;
 		left:12px;
 		width:221px;
 		height:217px;
@@ -95,7 +100,7 @@
 
 	#div5{
 		position:absolute;
-		top:285px;
+		top:271px;
 		left:246px;
 		width:221px;
 		height:217px;
@@ -103,34 +108,38 @@
 
 	#div6{
 		position:absolute;
-		top:285px;
+		top:271px;
 		left:480px;
 		width:221px;
 		height:217px;
+
 	}
 
 	#div7{
 		position:absolute;
-		top:550px;
+		top:504px;
 		left:12px;
 		width:221px;
 		height:217px;
+		margin-top: 5%;
 	}
 
 	#div8{
 		position:absolute;
-				top:550px;
+		top:504px;
 		left:246px;
 		width:221px;
 		height:217px;
+		margin-top: 5%;
 	}
 
 	#div9{
 		position:absolute;
-			top:550px;
+		top:504px;
 		left:480px;
 		width:221px;
 		height:217px;
+		margin-top: 5%;
 	}
 
 
@@ -151,7 +160,7 @@
 	td.pro {
 		width:300px;
 		text-align:center;
-	
+		
 	}
 	td.uni {
 		width:150px;
@@ -181,7 +190,7 @@
 		width:693px;
 		height:auto;
 
-	
+		color: black;
 	}
 	div.divZonaCompraNo{
 		position:relative;
@@ -199,7 +208,7 @@
 		
 	}
 	#divDatos{
-		
+	
 	}
 
 	#divPago{
@@ -278,11 +287,7 @@ a:link {
 	color:white;
 }	
 	
-	
-	
-	
-	
-	
-	
-	
+	.card:hover{
 
+	
+	}

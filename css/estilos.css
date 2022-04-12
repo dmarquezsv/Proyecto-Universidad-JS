@@ -51,7 +51,6 @@ footer{
 
 .colum2{
     max-width: 400px;
-    
 }
 
 .colum2 h1{
@@ -69,7 +68,7 @@ footer{
     height: 36px;
 }
 
-.row label{
+.row span{
     margin-top: 10px;
     margin-left: 20px;
     color: black;
@@ -174,7 +173,32 @@ form-control{
     width: 100%;
     height: 200px;
 }
+    #imgDestacado:hover{-webkit-transform:scale(1.3);transform:scale(1.3);}
 
 p{
     text-align: justify;
+}
+
+.redes{
+    display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg); // IE 9
+        -moz-transform: rotate(0deg); // Firefox
+        -o-transform: rotate(0deg); // Safari and Chrome
+        -ms-transform: rotate(0deg); // Opera
+        -webkit-transition: all 500ms ease-in-out; // IE 9
+        -moz-transition: all 500ms ease-in-out; // Firefox
+        -ms-transition: all 500ms ease-in-out; // Safari and Chrome 
+        -o-transition: all 500ms ease-in-out; // Opera 
+}
+
+.redes:hover{
+            transform: rotate(-35deg);
+            -webkit-transform: rotate(-35deg); // IE 9
+            -moz-transform: rotate(-35deg); // Firefox
+            -o-transform: rotate(-35deg); // Safari and Chrome
+            -ms-transform: rotate(-35deg); // Opera
 }
